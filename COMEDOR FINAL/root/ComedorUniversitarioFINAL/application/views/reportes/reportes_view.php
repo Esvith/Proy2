@@ -84,6 +84,8 @@
                             <thead>
                                 <tr>
                                     
+                                    
+                                    <th>Nº</th>
                                     <th>CODIGO</th>
                                     <th>NOMBRES</th>
                                     <th>APELLIDOS</th>
@@ -94,9 +96,14 @@
                                 </tr>
                             </thead>
                             <tbody>
+                         <?php $contar=0;?>
+
+
+                               
             		         <?php if (!empty($resultados)): ?>
                                     <?php  foreach($resultados as $resultado):?>
                                         <tr>
+                                            <td><?php echo $contar=$contar+1;?></td>
                                             <td><?php echo $resultado->codigo;?></td>
                                             <td><?php echo $resultado->nombres;?></td>
                                             <td><?php echo $resultado->apellidos;?></td>
@@ -107,12 +114,17 @@
                                             <td>
                                                 <button type="button" class="btn btn-info btn-view-venta" value="<?php //echo $venta->id;?>" data-toggle="modal" data-target="#modal-default"><span class="fa fa-search"></span></button>
                                             </td>
+                                            
                                         </tr>
                                     <?php endforeach;?>
                                 <?php endif ?>
+
                             </tbody>
-                        -->
+                        <center> <H3> TOTAL DE COMENSALES POR FECHA  =  <?php echo $contar;?> </H3> </center>
                         </table>
+                     
+                             
+                                 
                     </div>
                 </div>
             </div>

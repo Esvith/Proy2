@@ -34,7 +34,7 @@
 <title>Codeigniter y Mysqli</title>
 </head>
 <body>
-	<h3 align="center">(UPDATE, DELETE, SELECT, INSERT, PERMISOS DE MENU) <br/> CODEIGNITER Y MYSQLI</h3>
+	<h3 align="center">SISTEMA COMEDOR UNAMBA <br/> CODEIGNITER Y MYSQLI</h3>
 	<?php
 		if ($this->session->userdata('is_logged_in')){
 			echo '<h4 align="right">';
