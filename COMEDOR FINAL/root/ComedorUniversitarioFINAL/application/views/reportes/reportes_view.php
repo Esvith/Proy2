@@ -21,22 +21,45 @@
                     <form action="<?php echo current_url();?>" method="POST" class="form-horizontal">
                         <div class="form-group">
 
-                     	<label for="" class="col-md-1 control-label">Sexo:</label>
-                        	<div>
+                        <label for="" class="col-md-1 control-label">Desde:</label>
+                            <div class="col-md-3">
+                                <input type="date" class="form-control" name="fechainicio" value="<?php echo !empty($fechainicio) ? $fechainicio:'';?>">
+                            </div>
+                            <label for="" class="">Hasta:</label>
+                            <div class="col-md-3">
+                                <input type="date" class="form-control" name="fechafin" value="<?php  echo !empty($fechafin) ? $fechafin:'';?>">
+                            </div>
 
-                            <select name="sexo" id="sexo"> 
-                            <option selected="true" disabled="disabled"><?php echo !empty($sexo) ? $sexo:'seleccione sexo';?></option>
-                                <option value="femenino">femenino</option>
-                                <option value="masculino">masculino</option>
-                                <option value="">masculino</option>
- 
-                                </select>
+                            <br>
+
+                     	         	<div>
+
+
+
+
+
+
+
+
+                            <label for="" class="">Sexo:</label>
+
+                          
+
+                          <label>
+            <input type="radio" name="sexo" value="masculino"> masculino
+        </label>
+        <label>
+            <input type="radio" name="sexo" value="femenino"> femenino
+        </label>
+        <label>
+            <input type="radio" name="color" value="amarillo"> Amarillo
+        </label>
                                 </div>
 
                                     <label for="" class="col-md-1 control-label">Carrera:</label>
                                 <div>
                              <select name="carrera" id="carrera"> 
-                            <option selected="true" disabled="disabled"><?php echo !empty($sexo) ? $sexo:'seleccione carrera';?></option>
+                            <option selected="true" disabled="disabled"><?php echo !empty($carrera) ? $carrera:'seleccione carrera';?></option>
                                 <option value="INGENIERIA DE SISTEMAS">INGENIERIA DE SISTEMA</option>
                                 <option value="INGENIERIA CIVIL">INGENIERIA CIVIL</option>
                                 <option value="INGENIERIA MINAS">INGENIERIA MINAS</option>
@@ -53,14 +76,7 @@
 
 							</div>
 
-                            <label for="" class="col-md-1 control-label">Desde:</label>
-                            <div class="col-md-3">
-                                <input type="date" class="form-control" name="fechainicio" value="<?php echo !empty($fechainicio) ? $fechainicio:'';?>">
-                            </div>
-                            <label for="" class="col-md-1 control-label">Hasta:</label>
-                            <div class="col-md-3">
-                                <input type="date" class="form-control" name="fechafin" value="<?php  echo !empty($fechafin) ? $fechafin:'';?>">
-                            </div>
+                            
                             <div class="col-md-4">
                                 <input type="submit" name="buscar" value="Buscar" class="btn btn-primary">
                                 <a href="<?php echo base_url(); ?>index.php/reportes/reportes_con" class="btn btn-danger">Restablecer</a>
