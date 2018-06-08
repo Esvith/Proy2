@@ -6,7 +6,7 @@
 	  echo '</tr>';
 	  echo '<tr><td colspan=3>';
 	  $attributes = array("class" => "form-horizontal", "id" => "form", "name" => "form");
-	  echo form_open("atencioncomedor/Store", $attributes);
+	  echo form_open("usuarios/Nuevo", $attributes);
 	  echo form_open();
 	  echo '<center>';
 	  echo '<table border=0>';
