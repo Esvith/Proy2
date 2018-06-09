@@ -9,6 +9,7 @@ class model_atenciones extends CI_Model
 
 
    /*
+   esto sire askjdañhdasjkdasñjkhsjkdañsdal
 	public function ExisteEmail($email){
           $this->db->from('usuarios');
           $this->db->where('EMAIL',$email);
