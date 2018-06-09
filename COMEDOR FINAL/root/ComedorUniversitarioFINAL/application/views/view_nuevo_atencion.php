@@ -6,8 +6,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-        Clientes
-        <small>Nuevo</small>
+       REGISTRAR ATENCION
         </h1>
     </section>
     <!-- Main content -->
@@ -16,7 +15,8 @@
         <div class="box box-solid">
             <div class="box-body">
                 <div class="row">
-                    <div class="col-md-12">
+                <center>
+                    <div class="col-md-4">
                         <?php if($this->session->flashdata("error")):?>
                             <div class="alert alert-danger alert-dismissible">
                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -35,7 +35,7 @@
 
                         	  <div class="form-group">
                                 <label for="id">ID:</label>
-                                <input type="text" class="form-control" id="id" name="id"
+                                <input type="text" size="3" class="form-control" id="id" name="id" 
                                 value= <?php echo(@$datos_comesales[0]->id ); ?> >
   								</div>
 
@@ -46,7 +46,7 @@
 
                             </div>
                             
-                            <div class="form-group">s
+                            <div class="form-group">
                                 <label for="telefono">NOMBRES</label>
                                 <input type="text" class="form-control" id="telefono" name="telefono"
                                value= <?php echo(@$datos_comesales[0]->nombres ); ?> >
@@ -84,6 +84,7 @@
                             </div>
                         </form>
                     </div>
+                    </center>
                 </div>
             </div>
             <!-- /.box-body -->

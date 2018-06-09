@@ -31,10 +31,10 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
     folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="<?php echo base_url();?>/assets/template/dist/css/skins/_all-skins.min.css">
-<title>Codeigniter y Mysqli</title>
+<title></title>
 </head>
 <body>
-	<h3 align="center">SISTEMA COMEDOR UNAMBA <br/> CODEIGNITER Y MYSQLI</h3>
+	<h3 align="center">SISTEMA COMEDOR UNAMBA <br/> </h3>
 	<?php
 		if ($this->session->userdata('is_logged_in')){
 			echo '<h4 align="right">';

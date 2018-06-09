@@ -56,7 +56,7 @@ if(isset($_GET['permisos'])){
 ?>
 		<a href="<?php echo base_url();?>index.php/comesales/editar/<?php echo $comesal->id;?>/" class="btn btn-success">Editar</a>
 		
-		<a href="<?php echo base_url();?>index.php/comesales/eliminar/<?php echo $comesal->id ?>" class="btn btn-danger">Eliminar</a>
+		<!-- <a href="<?php echo base_url();?>index.php/comesales/eliminar/<?php echo $comesal->id ?>" class="btn btn-danger">Eliminar</a> -->
 <?php		
 		echo '</td>';
  		echo '<td>'.$comesal->codigo.'</td>';

@@ -84,7 +84,7 @@
 
                     <form action="<?php echo current_url();?>" method="POST" class="form-horizontal">
                     <div class="col-md-4">
-                                <input type="submit" name="procentaje" value="Buscar" class="btn btn-primary">
+                              
                                 <a href="<?php echo base_url(); ?>index.php/reportes/reportes_con/porcentajevm" class="btn btn-danger">Porcentaje Varones Mujeres</a>
                                 
                             </div>
