@@ -51,9 +51,7 @@
         <label>
             <input type="radio" name="sexo" value="femenino"> femenino
         </label>
-        <label>
-            <input type="radio" name="color" value="amarillo"> Amarillo
-        </label>
+ 
                                 </div>
 
                                     <label for="" class="col-md-1 control-label">Carrera:</label>
