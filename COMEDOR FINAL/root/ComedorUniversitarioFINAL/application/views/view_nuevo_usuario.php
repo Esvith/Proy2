@@ -63,7 +63,7 @@
 	$CampoOpcionesTipo = array(
 	'0'               	=> '---SELECCIONE TIPO DE USUARIO---',
 	'Administrador'		=> 'Administrador',
-	'Invitado'	    	=> 'Invitado',
+	'Encargado'	    	=> 'Encargado',
 	);
 	echo '<tr>';
     echo '<td>'.form_label("Tipo:",'TIPO').'</td>';

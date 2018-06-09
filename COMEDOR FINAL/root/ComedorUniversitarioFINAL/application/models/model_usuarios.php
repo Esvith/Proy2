@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 class model_usuarios extends CI_Model {
 	public function ListarUsuarios(){
-		$this->db->order_by('ID ASC');
+		$this->db->order_by('FECHA_REGISTRO DESC');
 		return $this->db->get('usuarios')->result();
 	}
 	public function ExisteEmail($email){

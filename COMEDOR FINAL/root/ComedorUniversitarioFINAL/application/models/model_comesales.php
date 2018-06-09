@@ -3,7 +3,7 @@ class model_comesales extends CI_Model
 {
 	public function ListarComesales()
 	{
-		$this->db->order_by('id ASC');
+		$this->db->order_by('fechaingreso DESC');
 		return $this->db->get('comesales')->result();
 	}
 

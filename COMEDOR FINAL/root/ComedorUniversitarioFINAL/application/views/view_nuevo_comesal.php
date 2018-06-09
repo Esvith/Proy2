@@ -61,27 +61,37 @@
 	echo '<td><font color="red">'.form_error('nombres').'</font></td>';
 	echo '</tr>';
 
-	$CampoOpcionesSexo = array(
-	'NoSirve'               	=> '---SELECCIONE SEXO DE USUARIO---',
-	'femenino'		=> 'Femenino',
-	'masculino'	    	=> 'Masculino',
-	);
-	// $Sexo = array(
-	// '0'               	=> '---SELECCIONE TIPO DE SEXO---',
-	// 'Masculino'		 	=> 'Masculino',
-	// 'Femenino'	    	=> 'Femenino',
-	// );
-	echo '<tr>';
-    echo '<td>'.form_label("Sexo:",'sexo').'</td>';
-    echo '<td>';              // $CampoOpcionesSexo
-    echo  form_dropdown('sexo',$CampoOpcionesSexo, set_value('sexo',@$datos_comesales[0]->sexo));
-    echo '</td>';
+	//$CampoOpcionesSexo = array(
+	//'NoSirve'               	=> '---SELECCIONE SEXO DE USUARIO---',
+	//'femenino'		=> 'Femenino',
+	//'masculino'	    	=> 'Masculino',
+	//);
+	//// $Sexo = array(
+	//// '0'               	=> '---SELECCIONE TIPO DE SEXO---',
+	//// 'Masculino'		 	=> 'Masculino',
+	//// 'Femenino'	    	=> 'Femenino',
+	//// );
+	//echo '<tr>';
+    //echo '<td>'.form_label("Sexo:",'sexo').'</td>';
+    //echo '<td>';              // $CampoOpcionesSexo
+    //echo  form_dropdown('sexo',$CampoOpcionesSexo, set_value('sexo',@$datos_comesales[0]->sexo));
+    //echo '</td>';
     // echo '<td><font color="red">'.form_error('sexo').'</font></td>';
-    echo '</tr>';
-	
-	
+   // echo '</tr>';
+    ?>
+    <TR>
+    	<TD><LABEL>SEXO</LABEL></TD>
+    	<TD><input type="radio" name="Sexo" value="masculino"> masculino
+    
+   
+            <input type="radio" name="Sexo" value="femenino"> femenino
+
+    </TR>
+       
+
+	<?php
 	$Facultad = array(
-	'NoSirve'               	=> '---SELECCIONE SEXO DE USUARIO---',
+	'NoSirve'               	=> '---SELECCIONE FACULTAD---',
 	'INGENIERIA'		=> 'INGENIERIA',
 	'MEDICINA'	    => 'MEDICINA',
 	'ADMINISTRACION'		=> 'ADMINISTRACION',
@@ -106,7 +116,7 @@
     echo '</tr>';
 
     $Carrera = array(
-	'NoSirve'               	=> '---SELECCIONE SEXO DE USUARIO---',
+	'NoSirve'               	=> '---SELECCIONE CARRERA PROFESIONAL---',
 	'INGENIERIA DE SISTEMAS'		=> 'INGENIERIA DE SISTEMAS',
 	'INGENIERIA CIVIL'		=> 'INGENIERIA CIVIL',
 	'INGENIERIA MINAS'		=> 'INGENIERIA MINAS',
